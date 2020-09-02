@@ -9,28 +9,32 @@ import { createAppContainer } from 'react-navigation'
 class InvestmentEducation extends React.Component {
     render() {
         return (
-        <SafeAreaView>
+        <SafeAreaView style={{flex: 1,}}>
             <ScrollView>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
-                <Text style={styles.text}>investment education.</Text>
+                <View style={styles.video_play}>
+                    <Text>Video!</Text>
+                </View>
+                <View style={styles.courese_list}>
+                    <Text>Course List</Text>
+                </View>
+                <View style={styles.courese_list}>
+                    <Text>Course List</Text>
+                </View>
             </ScrollView>
         </SafeAreaView>
         );
     }
 }
 
-const styles = StyleSheet.create(
-    {
-        text: {
-            fontSize: 50,
-        },
-    }
-)
+const styles = StyleSheet.create({
+    video_play: {
+        fontSize: 100,
+        flex: 1,
+    },
+    courese_list: {
+        fontSize: 100,
+        flex: 1,
+        backgroundColor: "red"
+    },
+})
 export default InvestmentEducation;
