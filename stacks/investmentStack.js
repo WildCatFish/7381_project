@@ -1,13 +1,14 @@
 import { createAppContainer } from 'react-navigation'
+
 import InvestmentEducation from '../screens/investmentEducation'
 import Investment from '../screens/investment';
+// import financial news screen here.
 
 import { createStackNavigator } from 'react-navigation-stack';
 
-
 const InvestmentStack = createStackNavigator(
     {
-        Home: {
+        InvestmentHome: {
             screen: Investment,
             navigationOptions: {
                 headerShown: false,
@@ -18,7 +19,13 @@ const InvestmentStack = createStackNavigator(
             navigationOptions: {
                 headerTitle: "Investmend Education",
             }
-        }
+        },
+        /*FinancialNewsDetail: {
+            screen: 
+            navigationOptions: {
+                headerTitle: "Financial News",
+            }
+        }*/
     }
 )
 
