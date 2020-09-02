@@ -1,24 +1,21 @@
-import React from "react";
+import React, { useState, useCallback, useRef } from "react";
 import {
   Image, StyleSheet, Text, View, Button, TouchableOpacity, ColorPropType, ScrollView,
   SafeAreaView, TouchableWithoutFeedback, } from "react-native";
 import { render } from "react-dom";
-import { createAppContainer } from 'react-navigation'
-
+import { WebView } from 'react-native-webview';
+import YoutubePlayer from "react-native-youtube-iframe";
 
 class InvestmentEducation extends React.Component {
     render() {
         return (
-        <SafeAreaView style={{flex: 1,}}>
+        <SafeAreaView style={{flex: 1, backgroundColor: "white",}}>
             <ScrollView>
-                <View style={styles.video_play}>
-                    <Text>Video!</Text>
-                </View>
-                <View style={styles.courese_list}>
-                    <Text>Course List</Text>
-                </View>
-                <View style={styles.courese_list}>
-                    <Text>Course List</Text>
+                <View>
+                <YoutubePlayer height={250} videoId={"yRr0_gJ-3mI"}/>
+                <YoutubePlayer height={250} videoId={"covxjhXsCi8"}/>
+                <YoutubePlayer height={250} videoId={"covxjhXsCi8"}/>
+                <YoutubePlayer height={250} videoId={"covxjhXsCi8"}/>
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -27,14 +24,18 @@ class InvestmentEducation extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    video_play: {
-        fontSize: 100,
-        flex: 1,
-    },
     courese_list: {
-        fontSize: 100,
-        flex: 1,
-        backgroundColor: "red"
+        fontSize: 25,
+        fontWeight: 'bold',
     },
+    courese_list_view: {
+        paddingTop: 5,
+        paddingLeft: 10,
+        borderColor: "gray", 
+        backgroundColor: "white",
+        borderBottomWidth: 0.5,
+        paddingBottom: 10,
+    }
 })
+
 export default InvestmentEducation;
