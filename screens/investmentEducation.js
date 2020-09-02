@@ -14,8 +14,8 @@ class InvestmentEducation extends React.Component {
                 <View>
                 <YoutubePlayer height={250} videoId={"yRr0_gJ-3mI"}/>
                 <YoutubePlayer height={250} videoId={"covxjhXsCi8"}/>
-                <YoutubePlayer height={250} videoId={"covxjhXsCi8"}/>
-                <YoutubePlayer height={250} videoId={"covxjhXsCi8"}/>
+                <YoutubePlayer height={250} videoId={"a5__xBUrDO0"}/>
+                <YoutubePlayer height={250} videoId={"uEeCJ4-qF5c"}/>
                 </View>
             </ScrollView>
         </SafeAreaView>

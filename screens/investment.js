@@ -58,8 +58,12 @@ class Investment extends React.Component {
             </TouchableWithoutFeedback>
             <View style={styles.head_bottom}>
               <View style={styles.head_bottom_up}>
-                <View style={styles.head_bottom_up_left}></View>
-                <View style={styles.head_bottom_up_right}></View>
+                <View style={styles.head_bottom_up_left}>
+                  <Text style={{alignSelf: "center", paddingTop: 40, fontSize: 20,}}>Short term</Text>
+                </View>
+                <View style={styles.head_bottom_up_right}>
+                  <Text style={{alignSelf: "center", paddingTop: 40, fontSize: 20,}}>Short term</Text>
+                </View>
               </View>
               <View style={styles.head_bottom_down}></View>
             </View>
