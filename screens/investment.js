@@ -128,10 +128,8 @@ class Investment extends React.Component {
                 </Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity>
-              <View style={styles.bottom_content}
-                //onPress={() => this.props.navigation.navigate('')}
-                >
+            <TouchableOpacity /*onPress={() => this.props.navigation.navigate('FinancialNewsDetail')}*/>
+              <View style={styles.bottom_content}>
                 <Image
                   style={styles.bottom_Logos}
                   source={require("../assets/button7.png")}

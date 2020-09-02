@@ -43,7 +43,9 @@ function MyTabs() {
     <Tab.Navigator
       initialRouteName="Saving"
       tabBarOptions={{
-        activeTintColor: '#e91e63',
+        activeTintColor: '#1F4E79',
+        inactiveBackgroundColor: '#1F4E79',
+        inactiveTintColor: 'white',
       }}
     >
       <Tab.Screen
