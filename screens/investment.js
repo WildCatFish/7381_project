@@ -1,9 +1,18 @@
 import React from "react";
 import {
-  Image, StyleSheet, Text, View, Button, TouchableOpacity, ColorPropType, ScrollView,
-  SafeAreaView, TouchableWithoutFeedback, } from "react-native";
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  TouchableOpacity,
+  ColorPropType,
+  ScrollView,
+  SafeAreaView,
+  TouchableWithoutFeedback,
+} from "react-native";
 import { render } from "react-dom";
-import { createAppContainer } from 'react-navigation'
+import { createAppContainer } from "react-navigation";
 
 class Investment extends React.Component {
   render() {
@@ -67,7 +76,11 @@ class Investment extends React.Component {
                 </View>
               </TouchableOpacity>
 
-              <TouchableOpacity onPress={() => this.props.navigation.navigate('InvestmentEducationDetail')}>
+              <TouchableOpacity
+                onPress={() =>
+                  this.props.navigation.navigate("InvestmentEducationDetail")
+                }
+              >
                 <View style={styles.buttons}>
                   <Image
                     style={styles.buttonLogo}
@@ -128,7 +141,11 @@ class Investment extends React.Component {
                 </Text>
               </View>
             </TouchableOpacity>
-            <TouchableOpacity /*onPress={() => this.props.navigation.navigate('FinancialNewsDetail')}*/>
+            <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate("FinancialNewsDetail")
+              }
+            >
               <View style={styles.bottom_content}>
                 <Image
                   style={styles.bottom_Logos}
@@ -162,7 +179,6 @@ class Investment extends React.Component {
   }
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -180,7 +196,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   contentContainer: {
-    height: '110%'
+    height: "110%",
   },
   head: {
     flex: 5,

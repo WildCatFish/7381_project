@@ -1,36 +1,28 @@
-import * as React from 'react';
-import { Text, View, StyleSheet, ScrollView } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import * as React from "react";
+import { Text, View, StyleSheet, ScrollView } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import InvestmentStack from './stacks/investmentStack';
-import InvestmentEducation from './screens/investmentEducation'
-import Product from './screens/products'
-
+import InvestmentStack from "./stacks/investmentStack";
+import InvestmentEducation from "./screens/investmentEducation";
+import Product from "./screens/products";
 
 function Feed() {
-  return (
-    <Product/>
-  );
+  return <Product />;
 }
 
 function Investment() {
-  return (
-      <InvestmentStack/>
-  );
+  return <InvestmentStack />;
 }
 
-
 function Profile() {
-  return (
-    <InvestmentEducation/>
-  );
+  return <InvestmentEducation />;
 }
 
 function Notifications() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Notifications!</Text>
     </View>
   );
@@ -43,16 +35,16 @@ function MyTabs() {
     <Tab.Navigator
       initialRouteName="Saving"
       tabBarOptions={{
-        activeTintColor: '#1F4E79',
-        inactiveBackgroundColor: '#1F4E79',
-        inactiveTintColor: 'white',
+        activeTintColor: "#1F4E79",
+        inactiveBackgroundColor: "#1F4E79",
+        inactiveTintColor: "white",
       }}
     >
       <Tab.Screen
         name="Saving"
         component={Feed}
         options={{
-          tabBarLabel: 'Saving',
+          tabBarLabel: "Saving",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="settings" color={color} size={size} />
           ),
@@ -62,7 +54,7 @@ function MyTabs() {
         name="Investment"
         component={Investment}
         options={{
-          tabBarLabel: 'Investment',
+          tabBarLabel: "Investment",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="dog" color={color} size={size} />
           ),
@@ -72,7 +64,7 @@ function MyTabs() {
         name="Donation"
         component={Notifications}
         options={{
-          tabBarLabel: 'Donation',
+          tabBarLabel: "Donation",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="cat" color={color} size={size} />
           ),
@@ -82,7 +74,7 @@ function MyTabs() {
         name="Profile"
         component={Profile}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: "Profile",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
@@ -92,14 +84,11 @@ function MyTabs() {
   );
 }
 
-const styles = StyleSheet.create(
-  {
-    container: {
-      flex: 1,
-    },
-  }
-)
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default function App() {
   return (
