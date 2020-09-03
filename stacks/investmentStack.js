@@ -4,7 +4,7 @@ import InvestmentEducation from "../screens/investmentEducation";
 import Investment from "../screens/investment";
 import FinancialNews from "../screens/financialNews";
 import Favorite from "../screens/favorite";
-// import Products from ''
+import Products from '../screens/products'
 
 import { createStackNavigator } from "react-navigation-stack";
 
@@ -38,7 +38,7 @@ const InvestmentStack = createStackNavigator({
       }
     },
   },
-  /*
+  
   ProductsDetail: {
     screen: Products,
     navigationOptions: {
@@ -49,7 +49,7 @@ const InvestmentStack = createStackNavigator({
         backgroundColor: "#1F4E79",
       }
     },
-  },*/
+  },
   FavoriteDetail: {
     screen: Favorite,
     navigationOptions: {
@@ -61,9 +61,6 @@ const InvestmentStack = createStackNavigator({
       }
     },
   },
-
-
-
 
 
 });
