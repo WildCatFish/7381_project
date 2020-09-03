@@ -6,10 +6,10 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import InvestmentStack from "./stacks/investmentStack";
 import InvestmentEducation from "./screens/investmentEducation";
-import Product from "./screens/products";
+
 
 function Feed() {
-  return <Product />;
+  return <Text>products</Text>;
 }
 
 function Investment() {

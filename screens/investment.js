@@ -70,7 +70,9 @@ class Investment extends React.Component {
           </View>
           <View style={styles.middle}>
             <View style={styles.middle_three_button}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                //onPress={()=> this.props.navigation.navigate("ProductsDetail")}
+              >
                 <View style={styles.buttons}>
                   <Image
                     style={styles.buttonLogo}
@@ -113,7 +115,9 @@ class Investment extends React.Component {
                   <Text style={styles.buttons_text}>Risk Survry</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={()=> this.props.navigation.navigate("FavoriteDetail")}
+                >
                 <View style={styles.buttons}>
                   <Image
                     style={styles.buttonLogo}
