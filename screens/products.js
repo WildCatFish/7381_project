@@ -14,9 +14,7 @@ export default class SearchBarExample extends Component {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <View style={styles.header}>
-            <Text style={styles.headerText}>financial Product</Text>
-          </View>
+
           <View>
             <Header searchBar rounded style={styles.searchBar}>
               <Item>
