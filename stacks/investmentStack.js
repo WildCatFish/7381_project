@@ -20,7 +20,7 @@ const InvestmentStack = createStackNavigator({
     screen: InvestmentEducation,
     navigationOptions: {
       headerTitleAlign: "center",
-      headerTitle: "Investmend Education",
+      headerTitle: "Investment Education",
       headerTintColor: "white",
       headerStyle: {
         backgroundColor: "#1F4E79",
